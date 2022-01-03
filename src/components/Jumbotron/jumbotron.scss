@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container-jumbo {
+    font-family: $family-text;
+    font-size: 3.2rem;
+    position: relative;
+
+    &::before {
+      @include bg-image-page;
+      background-image: url('../../assets/jumbotron.svg');
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+
+        .f-title {
+          font-family: $family-title;
+        }
+
+      .w-50 {
+        width: 50%;
+      }
+      .m-0-10r {
+        margin: 0 10rem;
+      }
+
+      .mx-2 {
+        margin: 0 1.5rem;
+      }
+    }
+}
