@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  max-width: 50%;
+  position: relative;
+  margin: 4% auto;
+  font-family: $family-text;
+
+  .project-image {
+    display: inline-block;
+    position: relative;
+
+    .image {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-height: 320px;
+      max-width: 480px;
+    }
+  }
+
+  .project-descrp {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 5%;
+
+    .project-text {
+      color: #5c1106;
+
+      .descp-title {
+        display: flex;
+        justify-content: center;
+      }
+
+      .descp-techs {
+        padding: 0.5rem 0 1.5rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .descp-text {
+        min-height: 10rem;
+        font-size: 1rem;
+      }
+    }
+
+    .container-button {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: auto;
+
+      .button {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        background-color: #fff;
+        color: #333;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #CCCCCC;
+      }
+    }
+
+  }
+}
+
+.font-card {
+  background-color: #99dfe4;
+  border-radius: .5rem;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+  0 0 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+}
