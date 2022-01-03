@@ -1,0 +1,83 @@
+@import './variables.scss';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.is-primary {
+  color: $primary;
+}
+
+.is-white {
+  color: #fff;
+}
+
+.is-grid {
+  display: grid;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.cols2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pl-5r {
+  padding-left: 5rem;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
+.flex-ac-fe {
+  align-content: flex-end;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.pt-0 {
+  margin-top: 0;
+}
+
+.pt-2 {
+  padding-top: 2%;
+}
+
+.pb-10r {
+  padding-bottom: 10rem;
+}
+
+.fs-5 {
+  font-size: 5rem;
+}
+
+.fs-6 {
+  font-size: 6rem;
+}
+
+.fs-7 {
+  font-size: 7rem;
+}
+
+.fs-12 {
+  font-size: 12rem;
+}
+
+.fw-b {
+  font-weight: bold;
+}
