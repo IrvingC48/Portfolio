@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container-contact {
+  font-family: $family-gral;
+  color: $blue-contact;
+  font-size: 1.2rem;
+  position: relative;
+
+  &::before {
+    @include bg-image-page;
+    background-image: url('../../assets/contact.svg');
+  }
+
+  .column {
+    @include column-item;
+    align-items: flex-start;
+    height: 75vh;
+    position: relative;
+    padding: 0;
+
+    .contact-me {
+      height: auto;
+      padding-left: 2rem;
+    }
+
+    .social-media {
+      @include column-item;
+      align-items: flex-end;
+
+
+      .media {
+        @include row-item;
+        margin: 0.5rem 0;
+
+        & span {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $blue-contact;
+
+  &:hover {
+    color: $blue-contact;
+  }
+}
+
+.w-80 {
+  width: 80%;
+}
