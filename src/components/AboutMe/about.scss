@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container-about {
+  font-family: $family-gral;
+  font-size: 1.2rem;
+  position: relative;
+
+  &::before {
+    @include bg-image-page;
+    background-image: url('../../assets/about_me.svg');
+  }
+
+  .column {
+    @include column-item;
+    align-items: flex-start;
+    left: 6rem;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+
+    .is-about-g {
+      color: $green-about;
+      height: 2rem;
+      padding-left: 1rem;
+    }
+
+    .is-about-b {
+      color: $blue-about;
+      height: auto;
+    }
+
+    .text-block {
+      width: 60%;
+    }
+  }
+}
